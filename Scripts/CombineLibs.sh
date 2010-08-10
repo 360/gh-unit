@@ -9,14 +9,17 @@ OUTPUT_FILE=${NAME}${FLAVOR}.a
 ZIP_DIR=${BUILD_DIR}/Zip
 
 if [ ! -d ${OUTPUT_DIR} ]; then
-	mkdir -f ${OUTPUT_DIR}
+	mkdir ${OUTPUT_DIR}
 fi
 
 # Combine lib files
 lipo -create "${BUILD_DIR}/${BUILD_STYLE}-iphoneos/${NAME}Device${FLAVOR}.a" "${BUILD_DIR}/${BUILD_STYLE}-iphonesimulator/${NAME}Simulator${FLAVOR}.a" -output ${OUTPUT_DIR}/${OUTPUT_FILE}
 
 # Copy to direcory for zipping
-mkdir -f ${ZIP_DIR}
+if [ ! -d ${ZIP_DIR} ]; then
+	mkdir ${ZIP_DIR}
+fi
+
 cp ${OUTPUT_DIR}/${OUTPUT_FILE} ${ZIP_DIR}
 cp ${BUILD_DIR}/${BUILD_STYLE}-iphonesimulator/*.h ${ZIP_DIR}
 #cp ${BUILD_DIR}/${BUILD_STYLE}-iphonesimulator/*.m ${ZIP_DIR}
