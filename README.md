@@ -57,6 +57,7 @@ There are two options. You can install it globally in /Library/Frameworks or wit
 	- Add a direct dependency, and select your project. (This will cause your application or framework to build before the test target.)
 - Copy [GHUnitTestMain.m](http://github.com/gabriel/gh-unit/tree/master/Classes-MacOSX/GHUnitTestMain.m) into your project and include in the Test target.
 - Now create a test (either by subclassing `SenTestCase` or `GHTestCase`), adding it to your test target. (See example test case below.)
+- By default, the Tests-Info.plist file includes `MainWindow` for `Main nib file base name`. You should clear this field.
 - (Optional) Install Makefile (see instructions below)
 
 ### Installing in your project
@@ -77,6 +78,7 @@ There are two options. You can install it globally in /Library/Frameworks or wit
 - If your main target is an application, you will need to include these source files to the `Test` project manually.
 
 - Now create a test (either by subclassing `SenTestCase` or `GHTestCase`), adding it to your test target. (See example test case below.)
+- By default, the Tests-Info.plist file includes `MainWindow` for `Main nib file base name`. You should clear this field.
 - (Optional) Install Makefile (see instructions below)
 
 ### Example test case (Mac OS X)
@@ -110,8 +112,7 @@ For example `MyTest.m`:
 		// Run after each test method
 	}
 
-	- (void)testFoo {
-		
+	- (void)testFoo {		
 		GHTestLog(@"I can log to the GHUnit test console: %@", foo);
 		
 		// Assert a is not NULL, with no custom error description
@@ -135,30 +136,29 @@ You should see something like:
 
 - Optionally, you can create and and set a prefix header (`Tests_Prefix.pch`) and add `#import <GHUnit/GHUnit.h>` to it, and then you won't have to include that import for every test.
 
-## Adding a GHUnit Test Target (iPhone)
-
-Frameworks and dynamic libraries are not supported in the iPhone environment, but you can use the libGHUnitIPhone.a static library.
+## Adding a GHUnit Test Target (iOS)
 
 - Add a `New Target`. Select `Cocoa Touch -> Application`. Name it `Tests` (or something similar).
-- Add some frameworks to `Linked Libraries`
+- Add the following frameworks to `Linked Libraries`:
+  - `GHUnitIOS.framework`
   - `CoreGraphics.framework`
   - `Foundation.framework`
   - `UIKit.framework`
-  - `CoreLocation.framework` (optional)
-- Include the GHUnit files (from the GHUnit/iPhone Static Library download above), in your `Test` target. These files should include:
-	- libGHUnitIPhone.a (static library)
-	- GHUnit header files
-	- GHUnit test main
-- Under 'Other Linker Flags' in the `Test` target, add `-ObjC` and `-all_load`  (`-all_load` may be necessary for running on 3.0 device)
+  - (Optional) `CoreLocation.framework`
+- Under 'Other Linker Flags' in the `Test` target, add `-ObjC` and `-all_load`
+- By default, the Tests-Info.plist file includes `MainWindow` for `Main nib file base name`. You should clear this field.
+- Add the [GHUnitIOSTestMain.m](http://github.com/gabriel/gh-unit/blob/master/Project-IPhone/GHUnitIOSTestMain.m) file into your project.
 - (Optional) Install Makefile (see instructions below)
+- (Optional) Create and and set a prefix header (`Tests_Prefix.pch`) and add `#import <GHUnitIOS/GHUnitIOS.h>` to it, and then you won't have to include that import for every test.
 
 Now you can create a test (either by subclassing `SenTestCase` or `GHTestCase`), adding it to your test target.
+
 
 ### Example test case (iPhone)
 
 For example `MyTest.m`:
 
-	#import "GHUnit.h"
+	#import <GHUnitIOS/GHUnitIOS.h>
 
 	@interface MyTest : GHTestCase { }
 	@end
@@ -217,6 +217,7 @@ Then go in the "Arguments" tab. You can add the following environment variables:
 	GHUNIT_CLI - Default NO; Runs tests on the command line (see Debugger Console, Cmd-Shift-R)
 	GHUNIT_RERAISE - Default NO; If an exception is encountered it re-raises it allowing you to crash into the debugger
 	GHUNIT_AUTORUN - Default NO; If YES, tests will start automatically
+	GHUNIT_AUTOEXIT - Default NO; If YES, will exit upon test completion (no matter what); For command line MacOSX testing
 
 ## Test Environment Variables (Recommended)
 
@@ -277,11 +278,11 @@ To run the tests from the command line:
 
 From the command line, run the tests from xcodebuild (with the GHUNIT_CLI environment variable set) :
 
-	// For mac app
+	// For mac app; This might seg fault in 10.6, in which case you should use `make test` via Makefile below
 	GHUNIT_CLI=1 xcodebuild -target Tests -configuration Debug -sdk macosx10.5 build	
 	
 	// For iPhone app
-	GHUNIT_CLI=1 xcodebuild -target Tests -configuration Debug -sdk iphonesimulator3.0 build
+	GHUNIT_CLI=1 xcodebuild -target Tests -configuration Debug -sdk iphonesimulator4.0 build
 
 If you are wondering, the `RunTests.sh` script will only run the tests if the env variable GHUNIT_CLI is set. 
 This is why this RunScript phase is ignored when running the test GUI. This is how we use a single Test target for both the GUI and command line testing.
