@@ -985,6 +985,699 @@
 			};
 			name = Release;
 		};
+		50076ED1123FB01D00D858D8 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Development;
+		};
+		50076ED2123FB01D00D858D8 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv6;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Use make 4_0 for iOS 4 builds";
+				SDKROOT = iphoneos4.1;
+			};
+			name = Development;
+		};
+		50076ED3123FB01D00D858D8 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002873B1181491F00D74BBD /* iPhoneSimulator-Debug.xcconfig */;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphonesimulator4.1;
+				VALID_ARCHS = i386;
+			};
+			name = Development;
+		};
+		50076ED4123FB01D00D858D8 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00028740118149E700D74BBD /* iPhoneDevice-Debug.xcconfig */;
+			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
+			};
+			name = Development;
+		};
+		50076ED5123FB01D00D858D8 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
+			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
+			};
+			name = Development;
+		};
+		50076ED6123FB01E00D858D8 /* Development (Pre-Production Servers) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = "Development (Pre-Production Servers)";
+		};
+		50076ED7123FB01E00D858D8 /* Development (Pre-Production Servers) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv6;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Use make 4_0 for iOS 4 builds";
+				SDKROOT = iphoneos4.1;
+			};
+			name = "Development (Pre-Production Servers)";
+		};
+		50076ED8123FB01E00D858D8 /* Development (Pre-Production Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002873B1181491F00D74BBD /* iPhoneSimulator-Debug.xcconfig */;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphonesimulator4.1;
+				VALID_ARCHS = i386;
+			};
+			name = "Development (Pre-Production Servers)";
+		};
+		50076ED9123FB01E00D858D8 /* Development (Pre-Production Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00028740118149E700D74BBD /* iPhoneDevice-Debug.xcconfig */;
+			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
+			};
+			name = "Development (Pre-Production Servers)";
+		};
+		50076EDA123FB01E00D858D8 /* Development (Pre-Production Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
+			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
+			};
+			name = "Development (Pre-Production Servers)";
+		};
+		50076EDB123FB01E00D858D8 /* Development (QA Servers) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = "Development (QA Servers)";
+		};
+		50076EDC123FB01E00D858D8 /* Development (QA Servers) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv6;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Use make 4_0 for iOS 4 builds";
+				SDKROOT = iphoneos4.1;
+			};
+			name = "Development (QA Servers)";
+		};
+		50076EDD123FB01E00D858D8 /* Development (QA Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002873B1181491F00D74BBD /* iPhoneSimulator-Debug.xcconfig */;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphonesimulator4.1;
+				VALID_ARCHS = i386;
+			};
+			name = "Development (QA Servers)";
+		};
+		50076EDE123FB01E00D858D8 /* Development (QA Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00028740118149E700D74BBD /* iPhoneDevice-Debug.xcconfig */;
+			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
+			};
+			name = "Development (QA Servers)";
+		};
+		50076EDF123FB01E00D858D8 /* Development (QA Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
+			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
+			};
+			name = "Development (QA Servers)";
+		};
+		50076EE0123FB01F00D858D8 /* Development (QA Eller Servers) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = "Development (QA Eller Servers)";
+		};
+		50076EE1123FB01F00D858D8 /* Development (QA Eller Servers) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv6;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Use make 4_0 for iOS 4 builds";
+				SDKROOT = iphoneos4.1;
+			};
+			name = "Development (QA Eller Servers)";
+		};
+		50076EE2123FB01F00D858D8 /* Development (QA Eller Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002873B1181491F00D74BBD /* iPhoneSimulator-Debug.xcconfig */;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphonesimulator4.1;
+				VALID_ARCHS = i386;
+			};
+			name = "Development (QA Eller Servers)";
+		};
+		50076EE3123FB01F00D858D8 /* Development (QA Eller Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00028740118149E700D74BBD /* iPhoneDevice-Debug.xcconfig */;
+			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
+			};
+			name = "Development (QA Eller Servers)";
+		};
+		50076EE4123FB01F00D858D8 /* Development (QA Eller Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
+			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
+			};
+			name = "Development (QA Eller Servers)";
+		};
+		50076EE5123FB01F00D858D8 /* Development (Development Servers) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = "Development (Development Servers)";
+		};
+		50076EE6123FB01F00D858D8 /* Development (Development Servers) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv6;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Use make 4_0 for iOS 4 builds";
+				SDKROOT = iphoneos4.1;
+			};
+			name = "Development (Development Servers)";
+		};
+		50076EE7123FB01F00D858D8 /* Development (Development Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002873B1181491F00D74BBD /* iPhoneSimulator-Debug.xcconfig */;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphonesimulator4.1;
+				VALID_ARCHS = i386;
+			};
+			name = "Development (Development Servers)";
+		};
+		50076EE8123FB01F00D858D8 /* Development (Development Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00028740118149E700D74BBD /* iPhoneDevice-Debug.xcconfig */;
+			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
+			};
+			name = "Development (Development Servers)";
+		};
+		50076EE9123FB01F00D858D8 /* Development (Development Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
+			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
+			};
+			name = "Development (Development Servers)";
+		};
+		50076EEA123FB02300D858D8 /* Ad-Hoc Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = "Ad-Hoc Distribution";
+		};
+		50076EEB123FB02300D858D8 /* Ad-Hoc Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv6;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Use make 4_0 for iOS 4 builds";
+				SDKROOT = iphoneos4.1;
+				ZERO_LINK = NO;
+			};
+			name = "Ad-Hoc Distribution";
+		};
+		50076EEC123FB02300D858D8 /* Ad-Hoc Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002873C1181499000D74BBD /* iPhoneSimulator-Release.xcconfig */;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphonesimulator4.1;
+				VALID_ARCHS = i386;
+			};
+			name = "Ad-Hoc Distribution";
+		};
+		50076EED123FB02300D858D8 /* Ad-Hoc Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002873E118149CE00D74BBD /* iPhoneDevice-Release.xcconfig */;
+			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
+			};
+			name = "Ad-Hoc Distribution";
+		};
+		50076EEE123FB02300D858D8 /* Ad-Hoc Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
+			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
+			};
+			name = "Ad-Hoc Distribution";
+		};
+		50076EEF123FB02400D858D8 /* Ad-Hoc Distribution (Pre-Production Servers) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = "Ad-Hoc Distribution (Pre-Production Servers)";
+		};
+		50076EF0123FB02400D858D8 /* Ad-Hoc Distribution (Pre-Production Servers) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv6;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Use make 4_0 for iOS 4 builds";
+				SDKROOT = iphoneos4.1;
+				ZERO_LINK = NO;
+			};
+			name = "Ad-Hoc Distribution (Pre-Production Servers)";
+		};
+		50076EF1123FB02400D858D8 /* Ad-Hoc Distribution (Pre-Production Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002873C1181499000D74BBD /* iPhoneSimulator-Release.xcconfig */;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphonesimulator4.1;
+				VALID_ARCHS = i386;
+			};
+			name = "Ad-Hoc Distribution (Pre-Production Servers)";
+		};
+		50076EF2123FB02400D858D8 /* Ad-Hoc Distribution (Pre-Production Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002873E118149CE00D74BBD /* iPhoneDevice-Release.xcconfig */;
+			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
+			};
+			name = "Ad-Hoc Distribution (Pre-Production Servers)";
+		};
+		50076EF3123FB02400D858D8 /* Ad-Hoc Distribution (Pre-Production Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
+			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
+			};
+			name = "Ad-Hoc Distribution (Pre-Production Servers)";
+		};
+		50076EF4123FB02400D858D8 /* Ad-Hoc Distribution (QA Servers) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = "Ad-Hoc Distribution (QA Servers)";
+		};
+		50076EF5123FB02400D858D8 /* Ad-Hoc Distribution (QA Servers) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv6;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Use make 4_0 for iOS 4 builds";
+				SDKROOT = iphoneos4.1;
+				ZERO_LINK = NO;
+			};
+			name = "Ad-Hoc Distribution (QA Servers)";
+		};
+		50076EF6123FB02400D858D8 /* Ad-Hoc Distribution (QA Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002873C1181499000D74BBD /* iPhoneSimulator-Release.xcconfig */;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphonesimulator4.1;
+				VALID_ARCHS = i386;
+			};
+			name = "Ad-Hoc Distribution (QA Servers)";
+		};
+		50076EF7123FB02400D858D8 /* Ad-Hoc Distribution (QA Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002873E118149CE00D74BBD /* iPhoneDevice-Release.xcconfig */;
+			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
+			};
+			name = "Ad-Hoc Distribution (QA Servers)";
+		};
+		50076EF8123FB02400D858D8 /* Ad-Hoc Distribution (QA Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
+			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
+			};
+			name = "Ad-Hoc Distribution (QA Servers)";
+		};
+		50076EF9123FB02400D858D8 /* Ad-Hoc Distribution (QA Eller Servers) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = "Ad-Hoc Distribution (QA Eller Servers)";
+		};
+		50076EFA123FB02400D858D8 /* Ad-Hoc Distribution (QA Eller Servers) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv6;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Use make 4_0 for iOS 4 builds";
+				SDKROOT = iphoneos4.1;
+				ZERO_LINK = NO;
+			};
+			name = "Ad-Hoc Distribution (QA Eller Servers)";
+		};
+		50076EFB123FB02400D858D8 /* Ad-Hoc Distribution (QA Eller Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002873C1181499000D74BBD /* iPhoneSimulator-Release.xcconfig */;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphonesimulator4.1;
+				VALID_ARCHS = i386;
+			};
+			name = "Ad-Hoc Distribution (QA Eller Servers)";
+		};
+		50076EFC123FB02400D858D8 /* Ad-Hoc Distribution (QA Eller Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002873E118149CE00D74BBD /* iPhoneDevice-Release.xcconfig */;
+			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
+			};
+			name = "Ad-Hoc Distribution (QA Eller Servers)";
+		};
+		50076EFD123FB02400D858D8 /* Ad-Hoc Distribution (QA Eller Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
+			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
+			};
+			name = "Ad-Hoc Distribution (QA Eller Servers)";
+		};
+		50076EFE123FB02500D858D8 /* Ad-Hoc Distribution (Development Servers) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = "Ad-Hoc Distribution (Development Servers)";
+		};
+		50076EFF123FB02500D858D8 /* Ad-Hoc Distribution (Development Servers) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv6;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Use make 4_0 for iOS 4 builds";
+				SDKROOT = iphoneos4.1;
+				ZERO_LINK = NO;
+			};
+			name = "Ad-Hoc Distribution (Development Servers)";
+		};
+		50076F00123FB02500D858D8 /* Ad-Hoc Distribution (Development Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002873C1181499000D74BBD /* iPhoneSimulator-Release.xcconfig */;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphonesimulator4.1;
+				VALID_ARCHS = i386;
+			};
+			name = "Ad-Hoc Distribution (Development Servers)";
+		};
+		50076F01123FB02500D858D8 /* Ad-Hoc Distribution (Development Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002873E118149CE00D74BBD /* iPhoneDevice-Release.xcconfig */;
+			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
+			};
+			name = "Ad-Hoc Distribution (Development Servers)";
+		};
+		50076F02123FB02500D858D8 /* Ad-Hoc Distribution (Development Servers) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
+			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
+			};
+			name = "Ad-Hoc Distribution (Development Servers)";
+		};
+		50076F03123FB02500D858D8 /* App Store Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = "App Store Distribution";
+		};
+		50076F04123FB02500D858D8 /* App Store Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv6;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Use make 4_0 for iOS 4 builds";
+				SDKROOT = iphoneos4.1;
+				ZERO_LINK = NO;
+			};
+			name = "App Store Distribution";
+		};
+		50076F05123FB02500D858D8 /* App Store Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002873C1181499000D74BBD /* iPhoneSimulator-Release.xcconfig */;
+			buildSettings = {
+				ARCHS = i386;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphonesimulator4.1;
+				VALID_ARCHS = i386;
+			};
+			name = "App Store Distribution";
+		};
+		50076F06123FB02500D858D8 /* App Store Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002873E118149CE00D74BBD /* iPhoneDevice-Release.xcconfig */;
+			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
+			};
+			name = "App Store Distribution";
+		};
+		50076F07123FB02500D858D8 /* App Store Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
+			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
+			};
+			name = "App Store Distribution";
+		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1020,6 +1713,17 @@
 			buildConfigurations = (
 				0002877011814A1F00D74BBD /* Debug */,
 				0002877111814A1F00D74BBD /* Release */,
+				50076ED3123FB01D00D858D8 /* Development */,
+				50076EEC123FB02300D858D8 /* Ad-Hoc Distribution */,
+				50076F05123FB02500D858D8 /* App Store Distribution */,
+				50076ED8123FB01E00D858D8 /* Development (Pre-Production Servers) */,
+				50076EF1123FB02400D858D8 /* Ad-Hoc Distribution (Pre-Production Servers) */,
+				50076EDD123FB01E00D858D8 /* Development (QA Servers) */,
+				50076EF6123FB02400D858D8 /* Ad-Hoc Distribution (QA Servers) */,
+				50076EE2123FB01F00D858D8 /* Development (QA Eller Servers) */,
+				50076EFB123FB02400D858D8 /* Ad-Hoc Distribution (QA Eller Servers) */,
+				50076EE7123FB01F00D858D8 /* Development (Development Servers) */,
+				50076F00123FB02500D858D8 /* Ad-Hoc Distribution (Development Servers) */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1029,6 +1733,17 @@
 			buildConfigurations = (
 				000287A111814A5300D74BBD /* Debug */,
 				000287A211814A5300D74BBD /* Release */,
+				50076ED4123FB01D00D858D8 /* Development */,
+				50076EED123FB02300D858D8 /* Ad-Hoc Distribution */,
+				50076F06123FB02500D858D8 /* App Store Distribution */,
+				50076ED9123FB01E00D858D8 /* Development (Pre-Production Servers) */,
+				50076EF2123FB02400D858D8 /* Ad-Hoc Distribution (Pre-Production Servers) */,
+				50076EDE123FB01E00D858D8 /* Development (QA Servers) */,
+				50076EF7123FB02400D858D8 /* Ad-Hoc Distribution (QA Servers) */,
+				50076EE3123FB01F00D858D8 /* Development (QA Eller Servers) */,
+				50076EFC123FB02400D858D8 /* Ad-Hoc Distribution (QA Eller Servers) */,
+				50076EE8123FB01F00D858D8 /* Development (Development Servers) */,
+				50076F01123FB02500D858D8 /* Ad-Hoc Distribution (Development Servers) */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1038,6 +1753,17 @@
 			buildConfigurations = (
 				000287FE11814C2800D74BBD /* Debug */,
 				000287FF11814C2800D74BBD /* Release */,
+				50076ED5123FB01D00D858D8 /* Development */,
+				50076EEE123FB02300D858D8 /* Ad-Hoc Distribution */,
+				50076F07123FB02500D858D8 /* App Store Distribution */,
+				50076EDA123FB01E00D858D8 /* Development (Pre-Production Servers) */,
+				50076EF3123FB02400D858D8 /* Ad-Hoc Distribution (Pre-Production Servers) */,
+				50076EDF123FB01E00D858D8 /* Development (QA Servers) */,
+				50076EF8123FB02400D858D8 /* Ad-Hoc Distribution (QA Servers) */,
+				50076EE4123FB01F00D858D8 /* Development (QA Eller Servers) */,
+				50076EFD123FB02400D858D8 /* Ad-Hoc Distribution (QA Eller Servers) */,
+				50076EE9123FB01F00D858D8 /* Development (Development Servers) */,
+				50076F02123FB02500D858D8 /* Ad-Hoc Distribution (Development Servers) */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1047,6 +1773,17 @@
 			buildConfigurations = (
 				006D780D120A93230053B72E /* Debug */,
 				006D780E120A93230053B72E /* Release */,
+				50076ED2123FB01D00D858D8 /* Development */,
+				50076EEB123FB02300D858D8 /* Ad-Hoc Distribution */,
+				50076F04123FB02500D858D8 /* App Store Distribution */,
+				50076ED7123FB01E00D858D8 /* Development (Pre-Production Servers) */,
+				50076EF0123FB02400D858D8 /* Ad-Hoc Distribution (Pre-Production Servers) */,
+				50076EDC123FB01E00D858D8 /* Development (QA Servers) */,
+				50076EF5123FB02400D858D8 /* Ad-Hoc Distribution (QA Servers) */,
+				50076EE1123FB01F00D858D8 /* Development (QA Eller Servers) */,
+				50076EFA123FB02400D858D8 /* Ad-Hoc Distribution (QA Eller Servers) */,
+				50076EE6123FB01F00D858D8 /* Development (Development Servers) */,
+				50076EFF123FB02500D858D8 /* Ad-Hoc Distribution (Development Servers) */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1056,6 +1793,17 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
+				50076ED1123FB01D00D858D8 /* Development */,
+				50076EEA123FB02300D858D8 /* Ad-Hoc Distribution */,
+				50076F03123FB02500D858D8 /* App Store Distribution */,
+				50076ED6123FB01E00D858D8 /* Development (Pre-Production Servers) */,
+				50076EEF123FB02400D858D8 /* Ad-Hoc Distribution (Pre-Production Servers) */,
+				50076EDB123FB01E00D858D8 /* Development (QA Servers) */,
+				50076EF4123FB02400D858D8 /* Ad-Hoc Distribution (QA Servers) */,
+				50076EE0123FB01F00D858D8 /* Development (QA Eller Servers) */,
+				50076EF9123FB02400D858D8 /* Ad-Hoc Distribution (QA Eller Servers) */,
+				50076EE5123FB01F00D858D8 /* Development (Development Servers) */,
+				50076EFE123FB02500D858D8 /* Ad-Hoc Distribution (Development Servers) */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
