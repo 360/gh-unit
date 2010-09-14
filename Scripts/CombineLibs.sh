@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 FLAVOR=""
 GHUNIT_VERSION=`cat ../XcodeConfig/Shared.xcconfig | grep "GHUNIT_VERSION =" | cut -d '=' -f 2 | tr -d " "`
 
@@ -22,8 +24,7 @@ fi
 
 cp ${OUTPUT_DIR}/${OUTPUT_FILE} ${ZIP_DIR}
 cp ${BUILD_DIR}/${BUILD_STYLE}-iphonesimulator/*.h ${ZIP_DIR}
-#cp ${BUILD_DIR}/${BUILD_STYLE}-iphonesimulator/*.m ${ZIP_DIR}
-#cp ${BUILD_DIR}/${BUILD_STYLE}-iphonesimulator/*.sh ${ZIP_DIR}
+cp ${BUILD_DIR}/${BUILD_STYLE}-iphonesimulator/*.m ${ZIP_DIR}
 cp ${BUILD_DIR}/${BUILD_STYLE}-iphonesimulator/Makefile ${ZIP_DIR}
 
 cd ${ZIP_DIR}

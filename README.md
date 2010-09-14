@@ -64,7 +64,7 @@ There are two options. You can install it globally in /Library/Frameworks or wit
 
 - Add a `New Target`. Select `Cocoa -> Application`. Name it `Tests` (or something similar).
 - In the Finder, copy `GHUnit.framework` to your project directory (maybe in MyProject/Frameworks/.)
-- In the `Tests` target, add the `GHUnit.framekwork` files (from MyProject/Frameworks/). It should now be visible as a `Linked Framework` in the target. 
+- In the `Tests` target, add the `GHUnit.framework` files (from MyProject/Frameworks/). It should now be visible as a `Linked Framework` in the target. 
 - In the `Tests` target, under Build Settings, add `@loader_path/../Frameworks` to `Runpath Search Paths` (Under All Configurations)
 - In the `Tests` target, add `New Build Phase` | `New Copy Files Build Phase`. 
 	- Change the Destination to `Frameworks`.
@@ -139,12 +139,14 @@ You should see something like:
 ## Adding a GHUnit Test Target (iOS)
 
 - Add a `New Target`. Select `Cocoa Touch -> Application`. Name it `Tests` (or something similar).
+- Add the `GHUnitIOS.framework` to your project.
 - Add the following frameworks to `Linked Libraries`:
   - `GHUnitIOS.framework`
   - `CoreGraphics.framework`
   - `Foundation.framework`
   - `UIKit.framework`
   - (Optional) `CoreLocation.framework`
+- Under 'Framework Search Paths' make sure the (parent) directory to GHUnitIOS.framework is listed.
 - Under 'Other Linker Flags' in the `Test` target, add `-ObjC` and `-all_load`
 - By default, the Tests-Info.plist file includes `MainWindow` for `Main nib file base name`. You should clear this field.
 - Add the [GHUnitIOSTestMain.m](http://github.com/gabriel/gh-unit/blob/master/Project-IPhone/GHUnitIOSTestMain.m) file into your project.
