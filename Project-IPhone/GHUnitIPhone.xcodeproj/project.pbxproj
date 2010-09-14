@@ -726,6 +726,7 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GHUnitIPhone" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -889,9 +890,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002873B1181491F00D74BBD /* iPhoneSimulator-Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = i386;
+				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphonesimulator4.0;
+				SDKROOT = iphonesimulator4.1;
+				VALID_ARCHS = i386;
 			};
 			name = Debug;
 		};
@@ -899,9 +902,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002873C1181499000D74BBD /* iPhoneSimulator-Release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = i386;
+				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphonesimulator4.0;
+				SDKROOT = iphonesimulator4.1;
+				VALID_ARCHS = i386;
 			};
 			name = Release;
 		};
@@ -909,8 +914,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00028740118149E700D74BBD /* iPhoneDevice-Debug.xcconfig */;
 			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphoneos4.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
 			};
 			name = Debug;
 		};
@@ -918,8 +927,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002873E118149CE00D74BBD /* iPhoneDevice-Release.xcconfig */;
 			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphoneos4.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
 			};
 			name = Release;
 		};
@@ -927,8 +940,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
 			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
 			};
 			name = Debug;
 		};
@@ -936,28 +952,35 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
 			buildSettings = {
+				ARCHS = armv6;
+				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos4.1;
+				VALID_ARCHS = armv6;
 			};
 			name = Release;
 		};
 		006D780D120A93230053B72E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv6;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				PRODUCT_NAME = "Use make 4_0 for iOS 4 builds";
+				SDKROOT = iphoneos4.1;
 			};
 			name = Debug;
 		};
 		006D780E120A93230053B72E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv6;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PRODUCT_NAME = "Use make 4_0 for iOS 4 builds";
+				SDKROOT = iphoneos4.1;
 				ZERO_LINK = NO;
 			};
 			name = Release;
