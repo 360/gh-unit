@@ -9,3 +9,6 @@ Documentation
 *.swp
 *~.nib
 .gitattributes
+
+*/project.xcworkspace/
+*/xcuserdata/

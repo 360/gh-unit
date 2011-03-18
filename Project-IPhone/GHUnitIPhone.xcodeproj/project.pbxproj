@@ -890,11 +890,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002873B1181491F00D74BBD /* iPhoneSimulator-Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = i386;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphonesimulator4.1;
-				VALID_ARCHS = i386;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -902,11 +902,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002873C1181499000D74BBD /* iPhoneSimulator-Release.xcconfig */;
 			buildSettings = {
-				ARCHS = i386;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphonesimulator4.1;
-				VALID_ARCHS = i386;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -914,12 +914,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00028740118149E700D74BBD /* iPhoneDevice-Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -927,12 +926,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002873E118149CE00D74BBD /* iPhoneDevice-Release.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -940,11 +938,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -952,11 +949,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -1015,11 +1011,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002873B1181491F00D74BBD /* iPhoneSimulator-Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = i386;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphonesimulator4.1;
-				VALID_ARCHS = i386;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = Development;
 		};
@@ -1027,12 +1023,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00028740118149E700D74BBD /* iPhoneDevice-Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = Development;
 		};
@@ -1040,11 +1035,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				SDKROOT = iphoneos;
 			};
 			name = Development;
 		};
@@ -1078,11 +1072,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002873B1181491F00D74BBD /* iPhoneSimulator-Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = i386;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphonesimulator4.1;
-				VALID_ARCHS = i386;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = "Development (Pre-Production Servers)";
 		};
@@ -1090,12 +1084,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00028740118149E700D74BBD /* iPhoneDevice-Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = "Development (Pre-Production Servers)";
 		};
@@ -1103,11 +1096,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				SDKROOT = iphoneos;
 			};
 			name = "Development (Pre-Production Servers)";
 		};
@@ -1141,11 +1133,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002873B1181491F00D74BBD /* iPhoneSimulator-Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = i386;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphonesimulator4.1;
-				VALID_ARCHS = i386;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = "Development (QA Servers)";
 		};
@@ -1153,12 +1145,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00028740118149E700D74BBD /* iPhoneDevice-Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = "Development (QA Servers)";
 		};
@@ -1166,11 +1157,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				SDKROOT = iphoneos;
 			};
 			name = "Development (QA Servers)";
 		};
@@ -1204,11 +1194,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002873B1181491F00D74BBD /* iPhoneSimulator-Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = i386;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphonesimulator4.1;
-				VALID_ARCHS = i386;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = "Development (QA Eller Servers)";
 		};
@@ -1216,12 +1206,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00028740118149E700D74BBD /* iPhoneDevice-Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = "Development (QA Eller Servers)";
 		};
@@ -1229,11 +1218,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				SDKROOT = iphoneos;
 			};
 			name = "Development (QA Eller Servers)";
 		};
@@ -1267,11 +1255,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002873B1181491F00D74BBD /* iPhoneSimulator-Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = i386;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphonesimulator4.1;
-				VALID_ARCHS = i386;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = "Development (Development Servers)";
 		};
@@ -1279,12 +1267,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00028740118149E700D74BBD /* iPhoneDevice-Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = "Development (Development Servers)";
 		};
@@ -1292,11 +1279,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				SDKROOT = iphoneos;
 			};
 			name = "Development (Development Servers)";
 		};
@@ -1330,11 +1316,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002873C1181499000D74BBD /* iPhoneSimulator-Release.xcconfig */;
 			buildSettings = {
-				ARCHS = i386;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphonesimulator4.1;
-				VALID_ARCHS = i386;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = "Ad-Hoc Distribution";
 		};
@@ -1342,12 +1328,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002873E118149CE00D74BBD /* iPhoneDevice-Release.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = "Ad-Hoc Distribution";
 		};
@@ -1355,11 +1340,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				SDKROOT = iphoneos;
 			};
 			name = "Ad-Hoc Distribution";
 		};
@@ -1393,11 +1377,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002873C1181499000D74BBD /* iPhoneSimulator-Release.xcconfig */;
 			buildSettings = {
-				ARCHS = i386;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphonesimulator4.1;
-				VALID_ARCHS = i386;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = "Ad-Hoc Distribution (Pre-Production Servers)";
 		};
@@ -1405,12 +1389,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002873E118149CE00D74BBD /* iPhoneDevice-Release.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = "Ad-Hoc Distribution (Pre-Production Servers)";
 		};
@@ -1418,11 +1401,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				SDKROOT = iphoneos;
 			};
 			name = "Ad-Hoc Distribution (Pre-Production Servers)";
 		};
@@ -1456,11 +1438,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002873C1181499000D74BBD /* iPhoneSimulator-Release.xcconfig */;
 			buildSettings = {
-				ARCHS = i386;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphonesimulator4.1;
-				VALID_ARCHS = i386;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = "Ad-Hoc Distribution (QA Servers)";
 		};
@@ -1468,12 +1450,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002873E118149CE00D74BBD /* iPhoneDevice-Release.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = "Ad-Hoc Distribution (QA Servers)";
 		};
@@ -1481,11 +1462,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				SDKROOT = iphoneos;
 			};
 			name = "Ad-Hoc Distribution (QA Servers)";
 		};
@@ -1519,11 +1499,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002873C1181499000D74BBD /* iPhoneSimulator-Release.xcconfig */;
 			buildSettings = {
-				ARCHS = i386;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphonesimulator4.1;
-				VALID_ARCHS = i386;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = "Ad-Hoc Distribution (QA Eller Servers)";
 		};
@@ -1531,12 +1511,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002873E118149CE00D74BBD /* iPhoneDevice-Release.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = "Ad-Hoc Distribution (QA Eller Servers)";
 		};
@@ -1544,11 +1523,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				SDKROOT = iphoneos;
 			};
 			name = "Ad-Hoc Distribution (QA Eller Servers)";
 		};
@@ -1582,11 +1560,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002873C1181499000D74BBD /* iPhoneSimulator-Release.xcconfig */;
 			buildSettings = {
-				ARCHS = i386;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphonesimulator4.1;
-				VALID_ARCHS = i386;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = "Ad-Hoc Distribution (Development Servers)";
 		};
@@ -1594,12 +1572,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002873E118149CE00D74BBD /* iPhoneDevice-Release.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = "Ad-Hoc Distribution (Development Servers)";
 		};
@@ -1607,11 +1584,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				SDKROOT = iphoneos;
 			};
 			name = "Ad-Hoc Distribution (Development Servers)";
 		};
@@ -1645,11 +1621,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002873C1181499000D74BBD /* iPhoneSimulator-Release.xcconfig */;
 			buildSettings = {
-				ARCHS = i386;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphonesimulator4.1;
-				VALID_ARCHS = i386;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = "App Store Distribution";
 		};
@@ -1657,12 +1633,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002873E118149CE00D74BBD /* iPhoneDevice-Release.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = "App Store Distribution";
 		};
@@ -1670,11 +1645,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0002880E11814C8300D74BBD /* iPhoneTests.xcconfig */;
 			buildSettings = {
-				ARCHS = armv6;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				SDKROOT = iphoneos4.1;
-				VALID_ARCHS = armv6;
+				SDKROOT = iphoneos;
 			};
 			name = "App Store Distribution";
 		};
