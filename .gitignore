@@ -10,5 +10,5 @@ Documentation
 *~.nib
 .gitattributes
 
-*/project.xcworkspace/
-*/xcuserdata/
+Project-IPhone/GHUnitIPhone.xcodeproj/project.xcworkspace/
+Project-IPhone/GHUnitIPhone.xcodeproj/xcuserdata/
